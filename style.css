@@ -116,6 +116,7 @@ body{
     .card .heroImage .desktopV{
         display:block;
         height: 100%;
+        width: 100%;
         border-radius: 10px 0 0 10px;
     }
     .card .info .upper .mainHead{
@@ -138,7 +139,7 @@ body{
         box-shadow: 0 0 50px 0 rgb(155, 155, 155);
     }
     .card .heroImage{
-        width: 50%;
+        max-width: 50%;
     }
     .card .info{
         padding: 1rem;
@@ -150,6 +151,7 @@ body{
     .card .heroImage .desktopV{
         display:block;
         height: 100%;
+        width: 100%;
         border-radius: 10px 0 0 10px;
     }
     .card .info .upper .mainHead{
