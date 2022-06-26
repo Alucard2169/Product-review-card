@@ -8,7 +8,7 @@
 > Learned media queries 
 
 
-##Desktop Preview
+## Desktop Preview
 ![image](https://github.com/Alucard2169/Product-review-card/blob/main/screenshot1.jpg?raw=true)
 
 ## Mobile Preview
