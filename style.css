@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F0F0;
+}
+
+.card{
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.card .heroImage{
+    min-height: 50%;
+    width: 100%;
+    
+}
+
+.card .heroImage .mobileV{
+    width: 100%;
+     border-radius: 10px 10px 0 0;
+}
+.card .heroImage .desktopV{
+    display: none;  
+}
+.card .info{
+    padding: 1.5rem;
+}
+.card .info .upper .topic{
+    letter-spacing: 7px;
+    font-size: 1rem;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+.card .info .upper .mainHead{
+    font-family: "Fraunces",serif;
+    font-size: 2rem;
+    margin-top: .6rem;
+    color: hsl(212, 21%, 14%);
+}
+.card .info .upper article{
+    font-size: .8rem;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat",sans-serif;
+    margin-top: .9rem;
+    line-height: 25px;
+    font-weight: 500;
+}
+.card .info .lower{
+    margin-top: 2rem;
+    position: relative;
+}
+.card .info .lower .price{
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces",serif;
+}
+.card .info .lower .prev{
+    font-size: .8rem;
+    font-family: "Montserrat",sans-serif;
+    position: absolute;
+    left: 150px;
+    top: 10px;
+    color:hsl(228, 12%, 48%);
+}
+.card .info .lower button{
+    margin-top: 1rem;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: .9rem;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+}
+.card .info .lower button:hover{
+    background-color: hsl(158, 56%, 15%);
+}
+.card .info .lower button img{
+    margin-right: .8rem;
+}
+
+@media only screen and (min-width: 1300px){
+    .card{
+        flex-direction: row;
+        height: 65%;
+        width: 40%;
+        box-shadow: 0 0 50px 0 rgb(155, 155, 155);
+    }
+    .card .heroImage{
+        width: 50%;
+    }
+    .card .info{
+        padding: 1rem;
+        width: 50%;
+    }
+    .card .heroImage .mobileV{
+        display: none;
+    }
+    .card .heroImage .desktopV{
+        display:block;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+    .card .info .upper .mainHead{
+        margin-top: .5rem;
+        font-size: 1.9rem;
+    }
+    .card .info .upper article{
+        margin-top: .5rem;
+        line-height: 23px;
+    }
+    .card .info .lower{
+        margin-top: 1.5rem;
+    }
+}
+@media only screen and (min-width:1400px){
+    .card{
+        flex-direction: row;
+        height: 60%;
+        width: 39%;
+        box-shadow: 0 0 50px 0 rgb(155, 155, 155);
+    }
+    .card .heroImage{
+        width: 50%;
+    }
+    .card .info{
+        padding: 1rem;
+        width: 50%;
+    }
+    .card .heroImage .mobileV{
+        display: none;
+    }
+    .card .heroImage .desktopV{
+        display:block;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+    .card .info .upper .mainHead{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .card .info .upper article{
+        margin-top: 1.1rem;
+        line-height: 23px;
+    }
+    .card .info .lower{
+        margin-top: 2rem;
+    }
+}
